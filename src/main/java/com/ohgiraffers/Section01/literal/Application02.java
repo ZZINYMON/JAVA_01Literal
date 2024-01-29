@@ -17,11 +17,12 @@ public class Application02 {
         System.out.println(123 % 10); // 나머지
 
         // 1-2. 실수와 실수의 연산
+        System.out.println("=============== 실수와 실수의 연산 ===============");
         System.out.println(1.23 + 1.23);
         System.out.println(1.23 - 0.23);
         System.out.println(1.23 * 10.0);
         System.out.println(1.23 / 10.0);
-        System.out.println(5.1 % 4.1);
+        System.out.println(5.1 % 4.1);     // 약간의 오차가 생긴다
 
         // 1-3. 정수와 실수의 연산
         System.out.println("=============== 정수와 실수의 연산 ===============");
@@ -31,15 +32,19 @@ public class Application02 {
         System.out.println(123 / 0.5);
         System.out.println(123 % 0.5);
 
-        // 1-4. 문자와 문자의 연산
+        // 2. 문자의 연산
+        // 2-1. 문자와 문자의 연산
         System.out.println("=============== 문자와 문자의 연산 ===============");
-        System.out.println('a' + 'b'); // a : 97, b = 98
+        System.out.println('a' + 'b');      // a : 97, b = 98
         System.out.println('a' - 'b');
+        System.out.println('a' * 'b');
+        System.out.println('a' / 'b');
+        System.out.println('a' % 'b');
 
-        // 1-5. 문자와 정수의 연산
-            // 이쯤 되면 문자 'a'는 숫자 97과 같다라는 것을 알 수 있다. 문자 'A'는 65
-            /// 컴퓨터는 문자를 인식하지 못하고 숫자로만 인식할 수 있기 때문에,
-            // 모든 문자에 대응되는 숫자들이 매칭이 되어 있다. (아스키문자열표 참고)
+        // 2-2. 문자와 정수의 연산
+            // 이쯤 되면 문자 'a' 는 숫자 97과 같다라는 것을 알 수 있다. (문자 'A'는 65)
+            // 컴퓨터는 문자를 인식하지 못하고 숫자로만 인식할 수 있기 때문에,
+            // 모든 문자에 대응되는 숫자들이 매칭이 되어 있다. (아스키코드와 유니코드)
         System.out.println("=============== 문자와 정수의 연산 ===============");
         System.out.println('a' + 1);
         System.out.println('a' - 1);
@@ -52,18 +57,17 @@ public class Application02 {
         System.out.println("=============== 문자와 실수의 연산 ===============");
         System.out.println('a' + 1.0);
         System.out.println('a' - 1.0);
-        System.out.println('a' * 1.2);
-        System.out.println('a' / 1.2);
-        System.out.println('a' % 1.2);
-        System.out.println('a' + 'b' -'c');
+        System.out.println('a' * 2.0);
+        System.out.println('a' / 2.0);
+        System.out.println('a' % 2.0);
+        System.out.println('a' + 'b' - 'c');
 
 
 
         ////////// 삐뽀 //////////
-        // 여기서 결론은 문자는 내부적으로 숫자 취급을 한다는 것이다!
+        // 여기서 결론은, 문자는 내부적으로 숫자 취급을 한다는 것이다!
         // 결국 지금까지 연산은 숫자끼리의 연산을 본 것이고, 숫자(정수 혹은 실수) 형태의 값은
         // 수학의 사칙연산과 mod연산이 전부 가능하다.
-        ////////// 삐뽀 //////////
 
 
 
